@@ -12,14 +12,25 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 30vh;
       }
-      #bi-container
-      {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      
+      nav {
+        display: flex;
+        justify-content: center;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
       }
 </style>
   <link rel="stylesheet" href="style.css">
@@ -35,39 +46,49 @@
         <li><a href="http://carbonmarket.tgo.or.th/" alt="TGO Facebook">Carbon Market</a></li>
         <li><a href="http://thaicarbonlabel.tgo.or.th/" alt="TGO Facebook">Carbon Label</a></li>
         <li><a href="https://www.facebook.com/tgo.or.th" alt="TGO Facebook">Facebook</a></li>
+        <li><a href="./calendar.html" alt="TGO Human Resource">MD Calendar</a></li>
+        <li><a href="./human.html" alt="TGO Human Resource">HR Dashboard</a></li>
+        <li><a href="./ccissue.html" alt="TGO Carbon Isuance">Carbon Issue</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <h3>TGO Calendar</h3>
-    <div id="calendar-container">
-		  <iframe src="https://calendar.google.com/calendar/embed?height=1000&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FBangkok&src=dGdvY2FsZW5kYXJAZ21haWwuY29t&src=ZW4tZ2IudGgjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=YW51dGhpZGFzdDEzQGdtYWlsLmNvbQ&src=bmF0YXJpa2EudGdvQGdtYWlsLmNvbQ&src=cm9uZ3BoZXQudGdvQGdtYWlsLmNvbQ&color=%23AD1457&color=%23bd31b3&color=%23E4C441&color=%230B8043&color=%234285F4" style="border:solid 1px #777" width="1200" height="1000" frameborder="0" scrolling="no"></iframe>
-    </div>
     <section>
       <div class="grid-container">
         <article class="card">
-
-          <div id="bi-container">
-            <iframe 
-              title="HR" width="900" height="560" src="https://app.powerbi.com/view?r=eyJrIjoiNDlhNzZmZGMtNTdhMS00MWFhLThjMjctMTA4Mzc5NTk2MjkzIiwidCI6IjVhODdhOTE4LTUwN2ItNDAxZC1hNGFkLTJjY2IyMWY1ZjkzYiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true">
-            </iframe>
+          <div id="calendar-container" style="text-align: center;">
+            <a href="./calendar.html">
+              <img src="https://img.freepik.com/free-vector/calendar-icon-white-background_1308-84634.jpg?w=2000" href ="http://www.tgo.or.th/2020/index.php/th/" alt="Calendar" style="width:33%">
+            </a>
           </div>
         </article>
         <article class="card">
-
-          <div id="bi-container">
-            <iframe
-              title="Issue And Offset" width="900" height="560" src="https://app.powerbi.com/view?r=eyJrIjoiYzg0NGE2YTUtNGE4MC00ZTBjLTkyMjItMmQzMzRhMTFlZDc2IiwidCI6IjVhODdhOTE4LTUwN2ItNDAxZC1hNGFkLTJjY2IyMWY1ZjkzYiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true">
-            </iframe>
+          <div id="calendar-container" style="text-align: center;">
+            <a href="./human.html">
+              <img src="https://i0.wp.com/www.iedunote.com/img/49985/importance-of-human-resource-management.jpg" href ="http://www.tgo.or.th/2020/index.php/th/" alt="Human Resource" style="width:33%">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div id="calendar-container" style="text-align: center;">
+            <a href="./ccissue.html">
+              <img src="https://cdn.w600.comps.canstockphoto.com/carbon-dioxide-background-concept-clipart_csp6743361.jpg" alt="Carbon Isuance Dashboard" style="width:33%">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div id="calendar-container" style="text-align: center;">
+            <a href="./ccissue.html">
+              <img src="https://cdn.w600.comps.canstockphoto.com/carbon-dioxide-background-concept-clipart_csp6743361.jpg" alt="Carbon Isuance Dashboard" style="width:33%">
+            </a>
           </div>
         </article>
       </div>
     </section>
 
-    <section>
+    <section style="float: right;">
       <h2>Contact Pisut [Ice]</h2>
       <h3>Tel : 19788 and Email : pisutns@tgo.or.th</h3>
-      <h4>hi minna-san</h4>
     </section>
   </main>
 </body>
