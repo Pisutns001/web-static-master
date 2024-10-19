@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal</title>
+  <style>
+      #calendar-container
+      {
+      display: flex;
+      justify-content: center;
+      height: 30vh;
+      }
+      
+      nav {
+        display: flex;
+        justify-content: center;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+</style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img class="mySlides" src="images/3.jpg" alt="Banner 1" style="width:100%">
+  <nav>
+    <ul>
+      <li><a href="./index.html" alt="Home Page">HOME</a></li>
+      <li><a href="http://www.tgo.or.th/2020/index.php/th/" alt="Link TGO Website">TGO Website</a></li>
+      <li><a href="https://ghgreduction.tgo.or.th/th/t-ver.html" alt="GHG Reduction Website">GHGreduction</a></li>
+      <li><a href="http://carbonmarket.tgo.or.th/" alt="TGO Facebook">Carbon Market</a></li>
+      <li><a href="http://thaicarbonlabel.tgo.or.th/" alt="TGO Facebook">Carbon Label</a></li>
+      <li><a href="https://www.facebook.com/tgo.or.th" alt="TGO Facebook">Facebook</a></li>
+      <li><a href="./calendar.html" alt="TGO Human Resource">MD Calendar</a></li>
+      <li><a href="./human.html" alt="TGO Human Resource">HR Dashboard</a></li>
+      <li><a href="./ccissue.html" alt="TGO Carbon Isuance">Carbon Issue</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <style>
+        /* การตั้งค่าโครงสร้าง grid */
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr); /* 3 คอลัมน์ที่มีความกว้างเท่ากัน */
+          gap: 20px; /* ระยะห่างระหว่างการ์ด */
+          justify-items: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+          padding: 20px;
+        }
+    
+        /* การตั้งค่าการ์ด */
+        .card {
+          width: 400px;
+          height: 400px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+    
+        /* การตั้งค่าให้รูปภาพในแต่ละการ์ด */
+        .card img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+      </style>
+      <div class="grid-container">
+        <article class="card">
+          <div id="calendar-container" style="text-align: center;">
+            <a href="./calendar.html">
+              <img src="images/Calendar.jpg" href ="http://www.tgo.or.th/2020/index.php/th/" alt="Calendar" style="width:75%">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div id="calendar-container" style="text-align: center;">
+            <a href="./human.html">
+              <img src="images/HR.jpg" href ="http://www.tgo.or.th/2020/index.php/th/" alt="Human Resource" style="width:75%">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div id="calendar-container" style="text-align: center;">
+            <a href="./ccissue.html">
+              <img src="images/Dashboard.jpg" alt="Carbon Isuance Dashboard" style="width:75%">
+            </a>
+          </div>
+        </article>
+        <article class="card">
+          <div id="calendar-container" style="text-align: center;">
+            <a href="./sso.html">
+              <img src="images/SSO.jpg" alt="Thailand Emission" style="width:75%">
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section style="float: right;">
+
+    </section>
+  </main>
+</body>
+
+</html>
