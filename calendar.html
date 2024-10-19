@@ -2,68 +2,96 @@
 <html lang="en">
  
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intra Portal</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<header>
+  <img class="mySlides" src="images/3.jpg" alt="Banner 1" style="width:100%">
 <body>
-  <header>
-    <img src="https://static.vecteezy.com/system/resources/previews/002/885/318/original/nature-green-tree-fresh-leaf-on-beautiful-blurred-soft-bokeh-sunlight-background-with-free-copy-space-spring-summer-or-environment-cover-page-template-web-banner-and-header-free-photo.jpg" alt="Banner TGO" style="width:100%">
     <nav>
-      <ul>
-        <li><a href="./index.html" alt="Home Page">HOME</a></li>
-        <li><a href="http://www.tgo.or.th/2020/index.php/th/" alt="Link TGO Website">TGO Website</a></li>
-        <li><a href="https://ghgreduction.tgo.or.th/th/t-ver.html" alt="GHG Reduction Website">GHGreduction</a></li>
-        <li><a href="http://carbonmarket.tgo.or.th/" alt="TGO Facebook">Carbon Market</a></li>
-        <li><a href="http://thaicarbonlabel.tgo.or.th/" alt="TGO Facebook">Carbon Label</a></li>
-        <li><a href="https://www.facebook.com/tgo.or.th" alt="TGO Facebook">Facebook</a></li>
-        <li><a href="./calendar.html" alt="TGO Human Resource">MD Calendar</a></li>
-        <li><a href="./human.html" alt="TGO Human Resource">HR Dashboard</a></li>
-        <li><a href="./ccissue.html" alt="TGO Carbon Isuance">Carbon Issue</a></li>
-      </ul>
+
+      <button class="btn-hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Internal Portal</a>
+            <ul class="dropdown-content">
+              <li><a href="http://sso.tgo.or.th">SSO Portal</a></li>
+              <li><a href="https://eoffice.tgo.or.th">Eoffice</a></li>
+              <li><a href="https://ereport.tgo.or.th">ERP (GUI)</a></li>
+              <li><a href="https://ereport.tgo.or.th/tgohrm">EHRM</a></li>
+              <li><a href="https://ereport.tgo.or.th/tgohrm/#/payment-login">Payment Gateway</a></li>
+            </ul>
+          <li class="dropdown">
+            <a href="#">E-Service</a>
+            <ul class="dropdown-content">
+              <li><a href="https://www.tgo.or.th">TGO Website</a></li>
+              <li><a href="https://caacademy.tgo.or.th">CAACADEMY</a></li>
+              <li><a href="https://tver.tgo.or.th">T-VER</a></li>
+              <li><a href="https://registry.tgo.or.th">Registry</a></li>
+              <li><a href="https://carbonmarket.tgo.or.th">Carbon Market</a></li>
+              <li><a href="https://tcnn.tgo.or.th">TCNN</a></li>
+              <li><a href="https://thaicarbonlabel.tgo.or.th">Thaicarbonlabel</a></li>
+              <li><a href="https://cfp-cbam.tgo.or.th">CFP & CBAM</a></li>
+
+            </ul>
+          <li><a href="./calendar.html">MD Calendar</a></li>
+          <li><a href="#">HR</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#"class="btn-signin">Sign in</a></li>
+        </ul>
     </nav>
-  </header>
-  <main>
-    <p><b></b></p>
-    <div id="calendar-container">
-      <style>
-        /* ซ่อนปุ่ม "เพิ่มปฏิทิน" ด้วยการเพิ่มแถบสีขาว */
-        .calendar-container {
-           position: relative;
-           width: 1200px;
-           height: 1000px;
-        }
-     
-        .calendar-container iframe {
-           width: 100%;
-           height: 100%;
-           border: solid 1px #777;
-        }
-     
-        .calendar-container:after {
-           content: "";
-           position: absolute;
-           bottom: 0;
-           right: 0;
-           width: 120px;  /* ขนาดกว้างพอที่จะครอบคลุมปุ่ม */
-           height: 40px;  /* ปรับความสูงตามตำแหน่งของปุ่ม */
-           background-color: white;
-        }
-     </style>
-     
-     <div class="calendar-container">
-        <iframe src="https://calendar.google.com/calendar/embed?height=1000&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FBangkok&showTitle=0&showDate=1&src=ZW4tZ2IudGgjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=YW51dGhpZGFzdDEzQGdtYWlsLmNvbQ&src=bmF0YXJpa2EudGdvQGdtYWlsLmNvbQ&src=cm9uZ3BoZXQudGdvQGdtYWlsLmNvbQ&color=%23616161&color=%23E4C441&color=%2333B679&color=%234285F4"
-             style="border:solid 1px #777" width="1200" height="1000" frameborder="0" scrolling="no">
+    <main>
+      <p><b></b></p>
+      <div id="calendar-container">
+        <style>
+          
+          /* จัดตำแหน่ง calendar ให้อยู่ตรงกลาง */
+          #calendar-container {
+            display: flex;
+            justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+            align-items: center;     /* จัดให้อยู่กลางแนวตั้ง (ถ้าจำเป็น) */
+            min-height: 100vh;       /* ให้พื้นที่หน้าจอที่มีการใช้งานอย่างน้อย 100% ของความสูงหน้าจอ */
+          }
+          /* ซ่อนปุ่ม "เพิ่มปฏิทิน" ด้วยการเพิ่มแถบสีขาว */
+          .calendar-container {
+             position: relative;
+             width: 1200px;
+             height: 1000px;
+          }
+       
+          .calendar-container iframe {
+             width: 100%;
+             height: 100%;
+             border: solid 1px #777;
+          }
+       
+          .calendar-container:after {
+             content: "";
+             position: absolute;
+             bottom: 0;
+             right: 0;
+             width: 120px;  /* ขนาดกว้างพอที่จะครอบคลุมปุ่ม */
+             height: 40px;  /* ปรับความสูงตามตำแหน่งของปุ่ม */
+             background-color: white;
+          }
+       </style>
+       
+       <div class="calendar-container">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=1000&wkst=1&ctz=Asia%2FBangkok&bgcolor=%23ffffff&showTitle=0&src=bmF0YXJpa2EudGdvQGdtYWlsLmNvbQ&src=cm9uZ3BoZXQudGdvQGdtYWlsLmNvbQ&color=%2333B679&color=%234285F4" style="border:solid 1px #777" width="1200" height="1000" frameborder="0" scrolling="no">
         </iframe>
-     </div>
-    </div>
-
-    <section>
-
-    </section>
-  </main>
+       </div>
+      </div>
+    </main>
 </body>
 
 </html>
