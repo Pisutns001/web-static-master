@@ -14,11 +14,6 @@
   <img class="mySlides" src="images/3.jpg" alt="Banner 1" style="width:100%">
 <body>
     <nav>
-
-      <button class="btn-hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li class="dropdown">
@@ -41,7 +36,6 @@
               <li><a href="https://tcnn.tgo.or.th">TCNN</a></li>
               <li><a href="https://thaicarbonlabel.tgo.or.th">Thaicarbonlabel</a></li>
               <li><a href="https://cfp-cbam.tgo.or.th">CFP & CBAM</a></li>
-
             </ul>
           <li><a href="./calendar.html">MD Calendar</a></li>
           <li><a href="#">HR</a></li>
@@ -55,14 +49,14 @@
         <article class="card">
           <div id="calendar-container" style="text-align: center;">
             <a href="./calendar.html">
-              <img src="images/Calendar.jpg" href ="http://www.tgo.or.th/2020/index.php/th/" alt="Calendar" style="width:75%">
+              <img src="images/Calendar.jpg" alt="Calendar" style="width:75%">
             </a>
           </div>
         </article>
         <article class="card">
           <div id="calendar-container" style="text-align: center;">
             <a href="#">
-              <img src="images/HR.jpg" href ="http://www.tgo.or.th/2020/index.php/th/" alt="Human Resource" style="width:75%">
+              <img src="images/HR.jpg" alt="Human Resource" style="width:75%">
             </a>
           </div>
         </article>
@@ -76,14 +70,23 @@
         <article class="card">
           <div id="calendar-container" style="text-align: center;">
             <a href="#">
-              <img src="images/SSO.jpg" alt="Thailand Emission" style="width:75%">
+              <img src="images/SSO.jpg" alt="SSO Portal" style="width:75%">
             </a>
           </div>
         </article>
-
-        
       </div>
     </section>
+
+    <style>
+      #weather {
+        display: flex;
+        justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+        align-items: center;     /* จัดให้อยู่กลางแนวตั้ง (ถ้าจำเป็น) */
+        min-height: 100vh;       /* ให้พื้นที่หน้าจอที่มีการใช้งานอย่างน้อย 100% ของความสูงหน้าจอ */
+        margin: 0; /* ลบระยะห่างทั้งหมด */
+        padding: 0; /* ลบพื้นที่ในองค์ประกอบ */
+      }
+      </style>
   </main>
 </body>
 

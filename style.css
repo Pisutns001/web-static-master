@@ -59,16 +59,8 @@ nav {
   height: 80px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-}
-.btn-hamburger {
-  font-size: 1.5rem;
-  padding: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: none;
 }
 nav ul {
   display: flex;
@@ -91,47 +83,13 @@ nav ul li a:hover {
   color: #fff;
   border-radius: 10px;
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px;
+
+
+
+iframe {
+  margin: 0; /* ลบระยะห่างระหว่าง iframe */
+  padding: 0;
 }
-
-@media screen and (max-width: 900px) {
-  .container {
-    width: 100%;
-  }
-  nav {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  .btn-hamburger {
-    display: block;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 10;
-  }
-  nav ul {
-    width: 100%;
-    background: #fff;
-    display: none;
-    flex-direction: column;
-    transition: .3s ease;
-  }
-  nav ul li a {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid #e5e5e5;
-  }
-  .nav-active {
-    display: flex;
-  }
-}
-
-
-
 
 
 
